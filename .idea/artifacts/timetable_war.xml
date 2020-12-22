@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="timetable-1.0-SNAPSHOT.war">
+    <root id="archive" name="academicErp-1.0-SNAPSHOT.war">
       <element id="artifact" artifact-name="timetable:war exploded" />
     </root>
   </artifact>
