@@ -50,6 +50,8 @@ public class StudentsController {
             JSONObject result = new JSONObject();
             result.put("courses",Wrapping.getCoursearray());
             String temp = result.toString();
+            JSONArray array = new JSONArray();
+            Wrapping.setCoursearray(array);
             return Response.ok().entity(temp).build();
         }
         else {

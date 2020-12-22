@@ -1,8 +1,6 @@
 let tableFromJson = () => {
     let data = sessionStorage.getItem("jsonstring");
     console.log(data);
-    // var object = JSON.parse(data);
-    // console.log(object);
     const myData = JSON.parse(data);
         const days = [{name:"Monday"},{name:"Tuesday"},{name:"Wednesday"},{name:"Thursday"},{name:"Friday"}]
         // const myData = {
@@ -95,7 +93,7 @@ let tableFromJson = () => {
         let body= week;
         let times = [{time:"9:00"},{time:"11:00"},{time:"2:00"},{time:"4:00"}]
         let k=myData.courses;
-        body+="<tbody>";
+        body+="<tbody id = 'tablebody' >";
         for (let t=0;t<times.length;t++) {
             body+="<tr>";
             body = body+"<td>"+times[t].time+"</td>";
@@ -120,6 +118,7 @@ let tableFromJson = () => {
             body+="</tr>";
         }
         body+="</tbody>";
+
         document.getElementById("timetable").innerHTML = body;
 
 }

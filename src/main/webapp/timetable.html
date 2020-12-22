@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>TimeTable</title>
+    <script type="text/javascript" src="assets/js/html2canvas.min.js"></script>
+    <script type="text/javascript" src="assets/js/jspdf.min.js"></script>
 </head>
     <link rel="stylesheet" type="text/css" href="assets/css/timetable.css">
     <link rel="stylesheet" type="text/css" href="assets/css/button.css">
@@ -10,13 +12,10 @@
 
 <div class="multi-button">
     <button onclick="tableFromJson()" value="click">Display</button>
-    <button onclick="tableFromJson()" value="click">Download</button>
+    <button onclick="saveOnClick()" value="click">Download</button>
 </div>
-<table class="container" id="timetable">
-
-</table>
-
+<table class="container" id="timetable" style="padding-bottom: unset"></table>
 </body>
-
+<script src="assets/js/save-timetable.js"></script>
 <script src="assets/js/display-table.js"></script>
 </html>

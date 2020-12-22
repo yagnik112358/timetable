@@ -1,19 +1,8 @@
 
-
-
-
-/*//////////////////////////////////////////////////////////////////
-[ FONT ]*/
-
 @font-face {
   font-family: OpenSans-Regular;
-  src: url('../fonts/OpenSans/OpenSans-Regular.ttf'); 
+  src : url("/assets/fonts/OpenSans/OpenSans-Regular.ttf");
 }
-
-
-
-/*//////////////////////////////////////////////////////////////////
-[ RESTYLE TAG ]*/
 
 * {
 	margin: 0px; 
@@ -26,9 +15,8 @@ body, html {
 	font-family: OpenSans-Regular, sans-serif;
 }
 
-/*---------------------------------------------*/
 a {
-	font-family: OpenSans-Regular;
+  font-family: OpenSans-Regular, sans-serif;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -53,7 +41,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-	font-family: OpenSans-Regular;
+  font-family: OpenSans-Regular, sans-serif;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -65,8 +53,6 @@ ul, li {
 	list-style-type: none;
 }
 
-
-/*---------------------------------------------*/
 input {
 	outline: none;
 	border: none;
@@ -106,17 +92,15 @@ iframe {
 	border: none !important;
 }
 
-/*//////////////////////////////////////////////////////////////////
-[ Utility ]*/
 .txt1 {
-  font-family: OpenSans-Regular;
+  font-family: OpenSans-Regular, sans-serif;
   font-size: 15px;
   line-height: 1.4;
   color: #999999;
 }
 
 .txt2 {
-  font-family: OpenSans-Regular;
+  font-family: OpenSans-Regular, sans-serif;
   font-size: 15px;
   line-height: 1.4;
   color: #4272d7;
@@ -126,9 +110,6 @@ iframe {
   text-decoration: underline;
 }
 
-
-/*//////////////////////////////////////////////////////////////////
-[ login ]*/
 
 .limiter {
   width: 100%;
@@ -147,7 +128,7 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: #e9faff;
+  background: #1F2739;
 }
 
 .wrap-login100 {
@@ -163,25 +144,19 @@ iframe {
   -ms-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
-
-/*==================================================================
-[ Form ]*/
-
 .login100-form {
   width: 100%;
 }
 
 .login100-form-title {
   display: block;
-  font-family: OpenSans-Regular;
+  font-family: OpenSans-Regular, sans-serif;
   font-size: 30px;
   color: #555555;
   line-height: 1.2;
   text-align: center;
 }
 
-/*------------------------------------------------------------------
-[ Input ]*/
 
 .wrap-input100 {
   width: 100%;
@@ -198,7 +173,7 @@ iframe {
   display: block;
   width: 100%;
   background: transparent;
-  font-family: OpenSans-Regular;
+  font-family: OpenSans-Regular, sans-serif;
   font-size: 15px;
   color: #666666;
   line-height: 1.2;
@@ -306,9 +281,6 @@ input.input100 {
   }
 }
 
-
-/*------------------------------------------------------------------
-[ Button ]*/
 .container-login100-form-btn {
   width: 100%;
   display: -webkit-box;
@@ -349,8 +321,6 @@ input.input100 {
 }
 
 
-/*------------------------------------------------------------------
-[ Alert validate ]*/
 
 .validate-input {
   position: relative;
@@ -373,7 +343,7 @@ input.input100 {
   right: 12px;
   pointer-events: none;
 
-  font-family: OpenSans-Regular;
+  font-family: OpenSans-Regular, sans-serif;
   color: #c80000;
   font-size: 13px;
   line-height: 1.4;
@@ -390,7 +360,7 @@ input.input100 {
 
 .alert-validate::after {
   content: "\f12a";
-  font-family: FontAwesome;
+  font-family: FontAwesome, sans-serif;
   display: block;
   position: absolute;
   color: #c80000;
@@ -415,6 +385,3 @@ input.input100 {
     opacity: 1;
   }
 }
-
-
-

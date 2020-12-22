@@ -30,7 +30,7 @@ let login_form = document.getElementById('login-validation')
                 let temp = (await response.text()).valueOf();
                 let temp2 = (await response2.text()).valueOf();
                 sessionStorage.setItem("jsonstring",temp2);
-                location.href = "dashboard.html";
+                location.href = "timetable.html";
             } else {
                 document.getElementById("login-alert").style.display = "block";
             }
