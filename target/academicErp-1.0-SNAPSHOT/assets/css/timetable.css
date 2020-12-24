@@ -99,10 +99,9 @@ h2 a {
     background-color: #FFF842;
     color: #403E10;
     font-weight: bold;
-
+    text-align: center;
     box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
     transform: translate3d(6px, -6px, 0);
-
     transition-delay: 0s;
     transition-duration: 0.4s;
     transition-property: all;
@@ -113,3 +112,73 @@ h2 a {
     .container td:nth-child(4),
     .container th:nth-child(4) { display: none; }
 }
+.tooltip {
+    position: relative;
+    display: inline-block;
+    /*border-bottom: 1px dotted black;*/
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    /*width: inherit;*/
+    /*height: inherit;*/
+    text-align: center;
+    padding: 5px 0;
+    position: absolute;
+    background-color: #FFF842;
+    color: #403E10;
+    font-weight: bold;
+    box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
+    transform: translate3d(6px, -6px, 0);
+
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: line;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    position: absolute;
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    /*width: 50%*/
+}
+/*.popup:hover {*/
+/*    visibility: visible;*/
+/*}*/
+
+/*.popup:hover {*/
+/*    visibility: hidden;*/
+/*    margin: 70px auto;*/
+/*    padding: 20px;*/
+/*    background: #fff;*/
+/*    border-radius: 5px;*/
+/*    width: 30%;*/
+/*    position: relative;*/
+/*    transition: all 5s ease-in-out;*/
+/*}*/
+
+/*.popup h2 {*/
+/*    margin-top: 0;*/
+/*    color: #333;*/
+/*    font-family: Tahoma, Arial, sans-serif;*/
+/*}*/
+/*.popup .close {*/
+/*    position: absolute;*/
+/*    top: 20px;*/
+/*    right: 30px;*/
+/*    transition: all 200ms;*/
+/*    font-size: 30px;*/
+/*    font-weight: bold;*/
+/*    text-decoration: none;*/
+/*    color: #333;*/
+/*}*/
+/*.popup .close:hover {*/
+/*    color: #06D85F;*/
+/*}*/
+/*.popup .content {*/
+/*    max-height: 30%;*/
+/*    overflow: auto;*/
+/*}*/

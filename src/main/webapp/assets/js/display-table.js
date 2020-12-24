@@ -80,9 +80,8 @@ let tableFromJson = () => {
         //             faculty:"B Thangaraju"}]
         // }
         let week="";
-
         week+="<thead><tr>";
-        week+="<th><h1>time</h1></th>";
+        week+="<th><h1>Time</h1></th>";
         for(let i =0;i<days.length;i++){
             week+="<th><h1>";
             week+= days[i].name;
@@ -103,9 +102,19 @@ let tableFromJson = () => {
                     let j = k[i].time;
                     let d = k[i].day;
                     if (j === times[t].time && d === days[m].name) {
-                        body += "<td>";
+                        body += "<td><div class='tooltip'>";
                         body = body + k[i].name + "<br>" + k[i].faculty + "<br>" + k[i].room;
-                        body += "</td>";
+                        body= body + "<span class='tooltiptext'>"+"TA: ";
+                        for(let a =0 ; a<k[i].ta.length;a++){
+                            body=body+ k[i].ta[a].first_name +" "+k[i].ta[a].last_name+"<br>";
+                        }
+                        body+="Specialisation:";
+                        for(let a =0 ; a<k[i].specialisation.length;a++){
+                            body=body+ k[i].specialisation[a].name+"<br>";
+                        }
+
+                        //+k[i].ta[0].first_name + k[i].ta[0].last_name+"<br>"+k[i].specialisation[0].name+"</span>";
+                        body += "</div></td>";
                         flag = true;
                     }
 
