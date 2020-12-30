@@ -132,7 +132,7 @@ h2 a {
     transform: translate3d(6px, -6px, 0);
 
     transition-delay: 0s;
-    transition-duration: 0.4s;
+    transition-duration: 0.3s;
     transition-property: all;
     transition-timing-function: line;
 }
